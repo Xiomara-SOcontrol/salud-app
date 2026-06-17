@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div style={{ padding: 40, fontFamily: "Arial" }}>
@@ -7,21 +9,29 @@ export default function Home() {
 
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
 
-        <a href="/medica" style={{ backgroundColor: "#4CAF50", color: "white", padding: 20, borderRadius: 10 }}>
-          🩺 Atención Médica
-        </a>
+        <Link href="/medica">
+          <div style={{ backgroundColor: "#4CAF50", color: "white", padding: 20, borderRadius: 10 }}>
+            🩺 Atención Médica
+          </div>
+        </Link>
 
-        <a href="/enfermeria" style={{ backgroundColor: "#2196F3", color: "white", padding: 20, borderRadius: 10 }}>
-          💉 Enfermería
-        </a>
+        <Link href="/enfermeria">
+          <div style={{ backgroundColor: "#2196F3", color: "white", padding: 20, borderRadius: 10 }}>
+            💉 Enfermería
+          </div>
+        </Link>
 
-        <a href="/examenes" style={{ backgroundColor: "#FF9800", color: "white", padding: 20, borderRadius: 10 }}>
-          📋 Exámenes Periódicos
-        </a>
+        <Link href="/examenes">
+          <div style={{ backgroundColor: "#FF9800", color: "white", padding: 20, borderRadius: 10 }}>
+            📋 Exámenes Periódicos
+          </div>
+        </Link>
 
-        <a href="/emp" style={{ backgroundColor: "#9C27B0", color: "white", padding: 20, borderRadius: 10 }}>
-          🏭 EMP
-        </a>
+        <Link href="/emp">
+          <div style={{ backgroundColor: "#9C27B0", color: "white", padding: 20, borderRadius: 10 }}>
+            🏭 EMP
+          </div>
+        </Link>
 
       </div>
     </div>
